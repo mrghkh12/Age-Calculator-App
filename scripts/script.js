@@ -33,6 +33,11 @@ userInput.max = new Date().toISOString().split('T')[0]
     if(nowDay >= userInputDay){
         resultDay = nowDay - userInputDay
     }else{
-        
+        resultMonth--;
+        resultDay = grtDaysInMonth(userInputYear,userInputMonth) + nowDay - userInputDay
     }
+ }
+
+ function grtDaysInMonth(year,month){
+    return new Date(year,month,0).getDate()
  }
