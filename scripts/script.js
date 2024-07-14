@@ -2,6 +2,7 @@ const $ = document
 
 let calculateBtn = $.querySelector('.calculateBtn')
 let userInput = $.querySelector('#dateInput')
+let calculateResult = $.querySelector('#calculateResult')
 userInput.max = new Date().toISOString().split('T')[0]
 
  calculateBtn.addEventListener('click' , calculateDate)
@@ -42,7 +43,7 @@ userInput.max = new Date().toISOString().split('T')[0]
         resultYear--
     }
 
-    
+    calculateResult.innerHTML = `You are <span>${resultYear}</span> years, <span>${resultMonth}</span> months and <span>${resultDay}</span> days old`
 
  }
 

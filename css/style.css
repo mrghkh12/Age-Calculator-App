@@ -64,3 +64,10 @@
     background-size: 30px;
     cursor: pointer;
 }
+
+#calculateResult{
+    font-size: 20px;
+}
+#calculateResult span{
+    color: #ffff76;
+}
